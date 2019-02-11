@@ -9,4 +9,10 @@ class FizzBuzzTest {
         Assert.assertEquals("fizz", actual)
     }
 
+    @Test
+    fun returnsBuzzWhenNumberFive() {
+        val fizzBuzz = FizzBuzz()
+        val actual = fizzBuzz.convert(5)
+        Assert.assertEquals("buzz", actual)
+    }
 }
