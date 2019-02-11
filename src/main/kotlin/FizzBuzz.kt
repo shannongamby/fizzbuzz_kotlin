@@ -11,4 +11,12 @@ class FizzBuzz {
         }
     }
 
+    fun listFizzBuzz(num: Int): List<Any> {
+        val list: MutableList<Any> = mutableListOf()
+        for (i in 1..num) {
+            list.add(convert(i))
+        }
+        return list
+    }
+
 }

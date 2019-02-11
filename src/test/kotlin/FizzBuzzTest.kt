@@ -50,4 +50,11 @@ class FizzBuzzTest {
         val actual = fizzBuzz.convert(30)
         Assert.assertEquals("fizzbuzz", actual)
     }
+
+    @Test
+    fun returnsAListOfFizzBuzzOutputs() {
+        val fizzBuzz = FizzBuzz()
+        val actual = fizzBuzz.listFizzBuzz(5)
+        Assert.assertEquals(listOf("1", "2", "fizz", "4", "buzz"), actual)
+    }
 }
