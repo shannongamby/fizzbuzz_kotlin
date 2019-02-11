@@ -43,4 +43,11 @@ class FizzBuzzTest {
         val actual = fizzBuzz.convert(10)
         Assert.assertEquals("buzz", actual)
     }
+
+    @Test
+    fun returnsFizzBuzzWhenNumberThirty() {
+        val fizzBuzz = FizzBuzz()
+        val actual = fizzBuzz.convert(30)
+        Assert.assertEquals("fizzbuzz", actual)
+    }
 }

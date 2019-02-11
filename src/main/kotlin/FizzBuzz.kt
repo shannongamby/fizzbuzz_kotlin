@@ -1,6 +1,6 @@
 class FizzBuzz {
     fun convert(num: Int): String {
-        if (num == 15) {
+        if (num % 3 == 0 && num % 5 == 0) {
             return "fizzbuzz"
         } else if (num % 3 == 0) {
             return "fizz"
